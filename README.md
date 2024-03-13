@@ -1,3 +1,3 @@
-*** Chef Ramón Benitez ***
+* Chef Ramón Benitez *
 
 ** Página web profesional **
