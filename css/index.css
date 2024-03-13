@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,600;9..40,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+.nav-item {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.general {
+    padding: 2vw;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.block {
+    padding: 10vw;
+}
+
+/*--------------- Primera Seccion --------------- */
+
+#presentacion {
+    color: aliceblue;
+    padding: 12vh 10vw;
+}
+
+#presentacion::before {
+    content: "";
+    background-image: url('../imagenes/background.jpg');
+    background-size: 100vh;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.descripcionInicial {
+    font-size: larger;
+    min-height: 80vh;
+    padding-top: 10vh;
+}
+
+.headerLi {
+    font-weight: 800;
+    padding-top: 10vh;
+}
+
+p {
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+@media (max-width : 990px) {
+
+    .block {
+        padding:2vw;
+    }
+}

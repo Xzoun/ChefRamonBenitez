@@ -1,0 +1,10 @@
+.redes {
+    padding: 12vh 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    height: 120px;
+}

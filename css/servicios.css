@@ -1,0 +1,191 @@
+body,
+h1,
+h2,
+h3,
+.block h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+.nav-item {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    height: 100vh;
+    background-image: url('../imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+#carruselDiv {
+    max-height: 100vh;
+}
+
+#carruselServicios {
+    padding: 12vh 10vw 12vh 10vw;
+}
+
+.descripcionInicial {
+    padding: 6vh 10vw 6vh 10vw;
+    height: 100vh;
+    font-size: large;
+    text-align: center;
+}
+
+.descripcionInicial a img,
+.descripcionInicial p {
+    margin-top: 12vh;
+}
+
+.block {
+    padding: 10vh 10vw;
+}
+
+h5 a {
+    font-size: larger;
+    font-weight: 800;
+    color: aliceblue;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption p {
+    font-weight: 400;
+}
+
+.carrusel {
+    max-height: 80vh;
+}
+
+.subir {
+    rotate: 180deg;
+    border: solid 1px black;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    filter: invert(1);
+}
+
+.bajar {
+    filter: invert(1);
+}
+
+.imgcarrusel {
+    height: 100vh;
+    width: 40vw;
+    background-size: cover;
+}
+
+.centerCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img1 {
+    background-image: url("../imagenes/Servicios/Pc/asesoramiento.png");
+}
+
+#img2 {
+    background-image: url("../imagenes/Servicios/Pc/catering.png");
+}
+
+#img3 {
+    background-image: url("../imagenes/Servicios/Pc/chefPrivado.png");
+}
+
+#img4 {
+    background-image: url("../imagenes/Servicios/Pc/asador.png");
+}
+
+#img5 {
+    background-image: url("../imagenes/Servicios/Pc/viandas.png");
+}
+
+.general {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width : 990px) {
+
+    .descripcionInicial {
+        padding: 12vh 10vw 6vh 10vw;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        height: 140vh;
+        background-image: url('../imagenes/fondo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: -1;
+    }
+    .descripcionInicial a img,
+    .descripcionInicial p {
+        margin-top: 10vh;
+    }
+
+    .block {
+        padding: 12vh 3vw;
+    }
+
+    #img1 {
+        background-image: url("../imagenes/Servicios/Mobile/asesoramiento.png");
+    }
+
+    #img2 {
+        background-image: url("../imagenes/Servicios/Mobile/catering.png");
+    }
+
+    #img3 {
+        background-image: url("../imagenes/Servicios/Mobile/chefPrivado.png");
+    }
+
+    #img4 {
+        background-image: url("../imagenes/Servicios/Mobile/asador.png");
+    }
+
+    #img5 {
+        background-image: url("../imagenes/Servicios/Mobile/viandas.png");
+    }
+}
+
+@media (max-width : 660px) {
+    .descripcionInicial {
+        padding: 8vh 10vw 6vh 10vw;
+    }
+
+    .descripcionInicial a img,
+    .descripcionInicial p {
+        margin-top: 6vh;
+    }
+}
+
+@media (max-width : 440px) {
+    .descripcionInicial {
+        padding: 12vh 10vw 6vh 10vw;
+        font-size: medium;
+    }
+
+    .descripcionInicial a img,
+    .descripcionInicial p {
+        margin-top: 3vh;
+    }
+}

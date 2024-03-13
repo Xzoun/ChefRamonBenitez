@@ -1,0 +1,72 @@
+.navbar {
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(97, 182, 221);
+    z-index: 200;
+}
+
+.gorroNav {
+    height: 20px;
+    visibility: hidden;
+    rotate: -40deg;
+    position: absolute;
+    left: -8px;
+    z-index: 0;
+}
+
+.nav-item a {
+    z-index: 1;
+}
+
+.nav-item {
+    display: flex;
+    position: relative;
+    top: 1vh;
+    margin-right: 3vw;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.nav-item:hover .gorroNav {
+    visibility: visible;
+}
+
+.nav-item:hover {
+    font-weight: 600;
+}
+
+.non-hover:hover {
+    font-weight: 400;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+@media (max-width:990px) {
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-collapse {
+        background-color: rgb(97, 182, 221);
+        margin-top: 2vh;
+    }
+
+    .nav-item a {
+        padding-left: 1.2vw;
+    }
+}
+
+@media (max-width:600px) {
+    .nav-item a {
+        padding-left: 2vw;
+    }
+}
+
+@media (max-width:300px) {
+    .nav-item a {
+        padding-left: 3vw;
+    }
+}

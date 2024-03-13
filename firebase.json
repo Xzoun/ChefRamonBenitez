@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "../abuelo",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
